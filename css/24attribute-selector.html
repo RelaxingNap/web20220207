@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* title attribute selector도 조건식에 맞게 여러개 선택 가능 */
+        /* title attribute selector시작이 j인것 */
+        [title^="j"]{
+            color: blue;
+        }
+        /* title attribute selector마지막이 a인것 */
+        [title$="a"]{
+            background-color:gold;
+        }
+        [title*="u"]{
+            font-family: monospace;
+        }
+        h1[title$="a"]{
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1[title]*5>lorem3 -->
+    <h1 title="jimin">Lorem, ipsum dolor.</h1>
+    <h1 title="jungkuk">Distinctio, laudantium! Iure!</h1>
+    <h1 title="rm">In, eius consequatur!</h1>
+    <h1 title="v">Quasi, sint consequuntur!</h1>
+    <h1 title="suga">Tenetur, expedita modi.</h1>
+
+    <!-- h2[title]*3>lorem3 -->
+    <h2 title="korea">Lorem, ipsum dolor.</h2>
+    <h2 title="seoul">Odit, nostrum numquam.</h2>
+    <h2 title="asia">Deserunt, exercitationem error?</h2>
+</body>
+</html>

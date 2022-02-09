@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            color: blue;
+        }
+        .note {
+            text-decoration: underline;
+        }
+        .error {
+            text-decoration: line-through;
+        }
+        #head3 {
+            font-size: 3em;
+        }
+        /* 2개 클래스 스타일 동시 적용 */
+        .note.error {
+            color: red;
+        }
+        /* 다른 element와 클래스와 조합도 가능 */
+        p.note {
+            font-family: D2coding, monospace;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- h1#head$.note*3>lorem3 -->
+    <h1 id="head1" class="note">Lorem, ipsum dolor.</h1>
+    <h1 id="head2" class="note">Minus, magnam porro.</h1>
+    <h1 id="head3" class="note">Quod, sint qui.</h1>
+    
+    <!-- h1#head$4.error*3>lorem3 -->
+    <h1 id="head4" class="error">Lorem, ipsum dolor.</h1>
+    <h1 id="head5" class="error">Culpa, alias maiores.</h1>
+    <h1 id="head6" class="error">Fugiat, facere quisquam!</h1>
+
+    <h1 id="head17" class="note error">Lorem, ipsum dolor.</h1>
+    <h1 id="head27" class="note error">Quidem, ipsam quaerat.</h1>
+
+    <!-- 여러개의 클래스를 동시적용 가능 -->
+
+    <!-- p.note*2>lorem -->
+    <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur placeat dicta, harum expedita odio veniam fuga earum et reprehenderit, inventore minima modi commodi adipisci omnis ratione a nobis molestiae.</p>
+    <p class="note">Nesciunt recusandae iure, debitis temporibus nisi perferendis impedit molestias eligendi iusto corporis consectetur libero cupiditate voluptatem culpa dolore minima harum ducimus cumque fuga nemo reiciendis rerum veritatis. Deleniti, voluptatem est.</p>
+</body>
+</html>

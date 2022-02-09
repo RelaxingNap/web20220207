@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        li{
+            background-color: gold;
+        }
+        /* ul이 li의 부모가 되어야 한다. */
+        ul > li {
+            text-decoration: line-through;
+        }
+
+        ol > li {
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- > : 자식으로 내려가는 연산자, ^ : 부모로 올라가는 연산자-->
+    <!-- ul>li*3>lorem1^^ol>li*3>lorem1 -->
+    <ul>
+        <li>Lorem.</li>
+        <li>Esse.</li>
+        <li>Minima?</li>
+    </ul>
+    <ol>
+        <li>Lorem.</li>
+        <li>Soluta.</li>
+        <li>Nobis?</li>
+    </ol>
+</body>
+</html>

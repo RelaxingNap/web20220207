@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style> 
+        h1#head4.note {
+            color: aqua;
+        }
+        #head3 {
+            color: brown;
+        }
+        .note.error {
+            color: gold;
+        }
+        .note {
+            color: blue;
+        }
+        .error {
+            color: red;
+        }
+     
+    </style>
+</head>
+<body>
+
+    <!-- h1#head$.note*2>lorem3 -->
+    <h1 id="head1" class="note">Lorem, ipsum dolor.</h1>
+    <h1 id="head2" class="note">Similique, fugiat nam.</h1>
+
+    <!-- h1#head$@3.note.error*2>lorem3 -->
+    <h1 id="head3" class="note error">Lorem, ipsum dolor.</h1>
+    <h1 id="head4" class="note error">Unde, sint earum?</h1>
+    <!-- 중복된 attribute가 있을 시 마지막에 쓰여진 셀렉터의 attribute가 적용된다. -->
+    <!-- 클래스를 구체적으로 명시시 구체적으로 명시된 class 셀렉터의 attribute가 적용 -->
+    <!-- selector의 우선순위 id > class > element -->
+    <!-- 크롬 개발자도구->검사를 통해서 어떤 클래스가 적용되고 어떤 클래스가 적용이 안되었는지 볼 수 있음 -->
+</body>
+</html>
