@@ -8,3 +8,13 @@
    font-family는 fallback시스템(폰트가 없을 시 대체폰트를 적용하도록 setting)을 사용한다.
    폰트명이 길거나 띄어쓰기가 있는 경우 따옴표로 묶어서 표현
    기본적인 폰트패밀리(serif, Sans-serif등등...)을 설정하면 브라우저에 설정된 폰트패밀리의 폰트 유형으로 세팅됨.
+
+32. css박스는 Margin Border padding content로 구분
+    content는 너비와 높이로 결정. 그래서 property명도 width와 height임
+33. 대부분의 display는 Block-level Elements과 Inline Elements으로 나뉜다.   
+   Block-level Elements - <div>, <h1> - <h6>,<p>,<form>,<header>,<footer>,<section>
+   
+   내부에서 스타일을 지정하면 다른파일에 같은 스타일을 지정하거나 변경시 일일이 변경하게 됨.
+   
+   vscode 단축키 외우기
+   w3schools 사이트 구성 만들어보기

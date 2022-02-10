@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        .container {
+            justify-content: flex-start;
+            /* flex-container의 배치를 조절 할 수 있음 가로기준*/
+            align-items: center;
+            /* flex-container의 배치를 조절 할 수 있음 세로기준*/
+            display: flex;
+            height: 300px;
+            background-color: gray;
+        }
+
+        .item {
+            font-size: 32px;
+            text-align: center;
+        }
+
+        .item:nth-child(odd) {
+            background-color: blue;
+            color: white;
+        }
+
+        .item:nth-child(even) {
+            background-color: yellow;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+
+        .sub {
+            width: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- .container>.item#item$*5{$} -->
+    <div class="container">
+        <div class="item" id="item1">1</div>
+        <div class="item" id="item2">2</div>
+        <div class="item" id="item3">3</div>
+        <div class="item" id="item4">4</div>
+        <div class="item" id="item5">5</div>
+    </div>
+
+    <!-- .main>.sub>lorem1 -->
+    <div class="main">
+        <div class="sub">Lorem.</div>
+    </div>
+</body>
+
+</html>

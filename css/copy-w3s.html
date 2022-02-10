@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <style>
+        .first-menu-container,
+        .second-menu-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .first-left-menu,
+        .second-left-menu {
+            display: flex;
+        }
+
+        .first-right-menu,
+        .second-right-menu {
+            display: flex;
+        }
+
+        .first-left-menu-item:hover,
+        .first-right-menu-item:hover {
+            background-color: green;
+        }
+
+        .second-left-menu-item:hover,
+        .second-right-menu-item:hover {
+            background-color: gray;
+        }
+
+        .side-menu1:hover, .side-menu2:hover {
+            background-color: yellow;
+        }
+
+        .body-container {
+            display: flex;
+        }
+
+        .main-container {
+            flex: 1;
+        }
+
+        .main-menu-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main-left-menu-item:hover,
+        .main-right-menu-item:hover {
+            background-color: aqua;
+        }
+
+        .main-ad-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-name {
+            text-align: center;
+        }
+        .side-menu1-name, .side-menu2-name {
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- .first-menu-container>.first-left-menu>.first-left-menu-item*4>lorem1^^.first-right-menu>.first-right-menu-item*3>lorem1 -->
+    <div class="first-menu-container">
+        <div class="first-left-menu">
+            <div class="first-left-menu-item">Lorem.</div>
+            <div class="first-left-menu-item">Harum!</div>
+            <div class="first-left-menu-item">Natus.</div>
+            <div class="first-left-menu-item">Officia?</div>
+        </div>
+        <div class="first-right-menu">
+            <div class="first-right-menu-item">Lorem.</div>
+            <div class="first-right-menu-item">Ab.</div>
+            <div class="first-right-menu-item">Veniam?</div>
+        </div>
+    </div>
+
+    <!-- .second-menu-container>.second-left-menu>.second-left-menu-item*11>lorem1^^.second-right-menu>.second-right-menu-item*3>lorem1 -->
+    <div class="second-menu-container">
+        <div class="second-left-menu">
+            <div class="second-left-menu-item">Lorem.</div>
+            <div class="second-left-menu-item">Aliquid.</div>
+            <div class="second-left-menu-item">Distinctio.</div>
+            <div class="second-left-menu-item">Ea!</div>
+            <div class="second-left-menu-item">Quam!</div>
+            <div class="second-left-menu-item">Earum?</div>
+            <div class="second-left-menu-item">Quaerat.</div>
+            <div class="second-left-menu-item">Iste!</div>
+            <div class="second-left-menu-item">Necessitatibus!</div>
+            <div class="second-left-menu-item">Quisquam!</div>
+            <div class="second-left-menu-item">Nihil!</div>
+        </div>
+        <div class="second-right-menu">
+            <div class="second-right-menu-item">Lorem.</div>
+            <div class="second-right-menu-item">Nemo.</div>
+            <div class="second-right-menu-item">Magnam!</div>
+        </div>
+    </div>
+    <!-- .body-container>.side-menu-container*20+.main-body-container>.main-menu-container>.main-left-menu>.main-left-menu-item>lorem1^^.main-right-menu>.main-right-menu-item>lorem1^^^^^+ad-container -->
+    <div class="body-container">
+        <div class="side-menu-container">
+            <div class="side-menu1-name">사이드메뉴이름</div>
+            <div class="side-menu1-container">
+                <div class="side-menu1">Lorem.</div>
+                <div class="side-menu1">Quaerat!</div>
+                <div class="side-menu1">Laudantium?</div>
+                <div class="side-menu1">Dignissimos?</div>
+                <div class="side-menu1">Minima.</div>
+                <div class="side-menu1">Velit.</div>
+                <div class="side-menu1">Quos.</div>
+                <div class="side-menu1">Nihil.</div>
+                <div class="side-menu1">Modi!</div>
+                <div class="side-menu1">Dolores.</div>
+                <div class="side-menu1">Neque.</div>
+                <div class="side-menu1">Ipsa?</div>
+                <div class="side-menu1">Ut.</div>
+                <div class="side-menu1">Quia.</div>
+                <div class="side-menu1">Quasi?</div>
+                <div class="side-menu1">Nisi!</div>
+                <div class="side-menu1">Minus.</div>
+                <div class="side-menu1">Soluta?</div>
+                <div class="side-menu1">Veritatis?</div>
+                <div class="side-menu1">Ut.</div>
+            </div>
+            <div class="side-menu2-name">사이드메뉴이름</div>
+            <div class="side-menu2-container">
+                <div class="side-menu2">Lorem.</div>
+                <div class="side-menu2">Cumque.</div>
+                <div class="side-menu2">Unde?</div>
+                <div class="side-menu2">Sapiente.</div>
+                <div class="side-menu2">Dolorem.</div>
+                <div class="side-menu2">Sunt?</div>
+                <div class="side-menu2">Corrupti!</div>
+                <div class="side-menu2">Excepturi?</div>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="main-ad-container">
+                <img src="../html/소.jpg" alt="">
+            </div>
+            <div class="main-name">제목</div>
+            <div class="main-menu-container">
+                <div class="main-left-menu">
+                    <div class="main-left-menu-item">Lorem.</div>
+                </div>
+                <div class="main-right-menu">
+                    <div class="main-right-menu-item">Lorem.</div>
+                </div>
+            </div>
+        </div>
+        <div class="ad-container">
+            <img src="../html/소.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
