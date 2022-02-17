@@ -11,19 +11,45 @@
 <body>
     
     <script>
+        // return
+        // 1. 함수 종료
+        // 2. return키워드 오른쪽에 있는 값을 호출한 곳으로 반환(return)
 
-        let b = 20;     // global scope
-
-        if (true) {
-            let a = 4;  // 선언된 변수는 (코드)블럭 안에서만 사용가능.
+        let a = function () {
+            console.log(1);
+            console.log(2);
+            return; // return아래의 명령어는 실행되지 않는다.
             console.log(3);
-            console.log(a);
-            console.log(b);
         }
-        console.log(a);
+
+        let b = function () {
+            return 1;
+        }
+
+        a();
+        a();
+        let c = b();    // let c = 1;과 같아짐.
+        let d = 9;      
+
+        console.log(c);
+        console.log(d);
+
+        let e = function (x) {
+            return x * 2;
+        }
+
+        let f = e(100);
+        console.log(f);
+
+        let g = e(20);
+        console.log(g);
+
+        console.log(e(90));
+
+        let h = e(4) * 2;
+        console.log(h);
 
     </script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

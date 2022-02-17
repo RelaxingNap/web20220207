@@ -9,21 +9,22 @@
     </style>
 </head>
 <body>
-    
     <script>
-
-        let b = 20;     // global scope
-
-        if (true) {
-            let a = 4;  // 선언된 변수는 (코드)블럭 안에서만 사용가능.
-            console.log(3);
-            console.log(a);
+        let a = function (b) {
             console.log(b);
         }
-        console.log(a);
+        let c = function (d, e) {
+            console.log(d);
+            console.log(e);
+        }
+
+        c("hi", 3); // 앞의 값은 d에, 뒤의 값은e에 들어감. 파라미터의 순서에 맞게 들어감.
+        c("hello", "spring");
+        c(3); // e가 undefined
+        c(); //  둘다 undefined
+            //보통 매개변수와 넣을 값을 매칭해서 사용.
 
     </script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

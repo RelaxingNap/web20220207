@@ -11,19 +11,40 @@
 <body>
     
     <script>
-
-        let b = 20;     // global scope
-
-        if (true) {
-            let a = 4;  // 선언된 변수는 (코드)블럭 안에서만 사용가능.
-            console.log(3);
-            console.log(a);
-            console.log(b);
-        }
+        
+        // object {}
+        // 객체(개체)
+        // 1. 속성(property) : 값 (value, attribute, field)
+        // 2. 메소드(method) : 기능(function, action)
+        // 속성과 메소드를 묶어서 멤버라고함.
+        let a = 3;
+        let b = "hi";
+        let c = {};
+        
+        // 속성 (property)
+        // name : value
+        let d = {e : 3};
         console.log(a);
+        console.log(d.e);   // 객체안에 있는 property는 .으로 연결하여 사용.
+
+        // 연습
+        let f = {g : 300};
+        console.log(f.g);
+
+        // property값 변경
+        a = 5;
+        console.log(a);
+        d.e = 50;
+        console.log(d.e);
+
+        //코드 작성
+
+        f.g = 500;
+        console.log(f.g);   // 500
+
 
     </script>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
