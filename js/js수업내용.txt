@@ -95,7 +95,31 @@
 52. 삼항연산자 - a ? b : c의 형식으로 작성. 결과는 a가 true이면 b, a가 false이면 c
 54. code block의 명령문이 하나면 중괄호 생략 가능함. 하지만, 꼭 작성할 것.
 55. 선언된 변수는 (코드)블럭 안에서만 사용가능.
-
+56. function : 나중에 실행시키기 위한 명령문을 모아둔 코드블럭
+               함수호출(실행, call, invoke), a() <- 함수 실행 코드, 여러번 호출가능.
+57. function hello()이나, let hello = function () 형식으로 선언 가능.
+58. parameter(매개변수) : 함수 내에서 사용하는 변수, 값을 호출할 때 받는다.
+    argument(인자, 인수) : 넘겨준 값.
+    javascript는 type에 민감하지 않기 때문에 아무 자료형이나 넣어도 실행된다.
+59. let printDouble = function (a) <- 이런식으로 함수선언 후 ()안에 parameter를 넘겨준다.
+60. parameter에는 모든 자료형이 들어갈 수 있다.
+61. parameter에 값을 넣지 않을 수 있다. 그러면 그 파라미터는 undefined인 상태이다.
+62. parameter순서와 개수에 맞게 매칭해서 사용.
+64. ()에서 선언한 것은 code block안에서 선언한 것으로 서로 충돌나지 않음. lowerCamelCase로 작성
+66. return : 1. 함수 종료, 2. return키워드 오른쪽에 있는 값을 호출한 곳으로 반환(return)
+             return명령문이 실행되면 return아래의 명령문은 실행되지 않는다.
+70. object {}(객체, 개체) : 1. 속성(property) - 값(value, attribute, field)
+                            2. 메소드(method) - 기능(function, action)
+                            속성 + 메소드를 멤버라고 함.
+    속성(property) - name : value형식으로 작성. 객체안에 있는 property는 .으로 연결하여 사용.
+71. 각 property는 , 로 구분. property작성시 각 줄로 들여쓰기 해서 작성할 것.
+                     property의 순서는 중요치 않음.
+73. property와 method를 같이 사용해도 구분은 , 로 똑같이 함.
+    메소드(method) - 객체가 가진 함수. 함수 - 객체가 없어도 생성가능. method보다 큰 개념.
+74. return시 {}로 묶어서 여러개의 값을 동시에 적용하여 return가능.
+79. 내부에서 같은 object내의 property를 접근하여 사용 가능.
+    외부에서 method를 추가하여 사용가능.
+    this : 함수를 소유한 객체. 어떤 함수를 소유한 객체가 함수 내부에서 객체 자기자신을 가리킬때 사용.
 81. object : {}로 묶어서 표현, property(속성)과 method를 정의 할 수 있다.
              javascript는 모두 객체로 이루어져 있다.
              String : " ", ' '에 담아서 작성.
@@ -109,5 +133,19 @@
 88. for : 반복문 (loop). ()안에 3개의 명령문작성. 1번 : 초기값, 2번 : 실행조건, 3번 : 증감명령문
           실행순서 - 1번 -> 2번 true -> 코드블럭 -> 3번 -> 2번
                          -> 2번 false -> 종료
+98. for문() 안에서 i를 정의하고 쓰면, for문의 {}안에서만 적용됨.
+    for문 안에서 let이나 const를 꼭 써서 변수정의 할 것.
+A1. while문 조건이 맞지 않으면 반복문 실행 X, dowhile문 조건이 맞지 않더라도 무조건 한번은 실행
+A2. break : break문에서 가장 가까운 loop를 종료.
+A5. continue : 루프를 한번만 건너뜀. 필요한 부분만 건너 뛸 수 있음.
+A9. switch case : key값과 case의 값을 위에서부터 순서대로 비교하여 같은 값만 실행.
+                  값이 나오는 코드는 모두 ()안에 들어갈 수 있음.
+                  키워드가 일치하지 않을 경우, default에서 적용시킬 코드를 작성 할 수 있다.
+B1. break문 작성시 의도하지 않은 결과가 나올 수 있음. 
+    case가 끝나지 않고, 일치되지 않는 다음 statement키값의 명령을 실행한다.
+    일치되는 키값을 여러개도 지정 가능.
+B2. javascript에서 switch case문은 ===(내용의 값과 type명까지 동시 비교) 비교를 함.
+B4. property에 함수를 넣어서 실행시킬 수 있음. 가능하면 분리시켜서 쓸 것. 
+
 연산자 우선순위 외우면 좋음. 검색, 문서 찾아보는 연습 할것.
 79,80 0217

@@ -15,8 +15,8 @@
         let a = {
             aprop : "john",
             bprop : 99,
-            amethod : function() {
-                console.log(a.aprop);
+            amethod : function() {  
+                console.log(a.aprop);   // 내부에서 property를 접근하여 사용가능.
             }
         };
 
@@ -27,10 +27,10 @@
             bprop : 88
         }
 
-        b.cprop = "hello";
+        b.cprop = "hello";  // 외부에서 property를 추가하여 사용가능.
         console.log(b.cprop);
 
-        b.amethod = function() {
+        b.amethod = function() {    // 외부에서 method를 추가하여 사용가능.
             console.log(b.aprop);
         }
 
@@ -52,11 +52,11 @@
         //     console.log(d.aprop);
         // }
 
-        let e = function() {
+        let e = function() {     
             console.log(this.aprop);
         }
-        c.amethod = e;
-        d.amethod = e;
+        c.amethod = e; // e라는 객체가 어떤객체에 붙어서 property를 사용하고 싶을때, 함수값을 넘긴 후
+        d.amethod = e; // this를 사용하면, 그 함수의 property로 사용가능.
 
         c.amethod();
         d.amethod();
