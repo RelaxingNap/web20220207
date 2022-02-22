@@ -7,48 +7,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
+    
     </style>
 </head>
 <body>
     
-    <!-- h1*3>lorem1 -->
-    <h1>
+    <!-- h1*2#head$>lorem1 -->
+    <h1 id="head1">
         Lorem.
     </h1>
-    <h1>
-        Laborum.
+    <h1 id="head2">
+        Assumenda?
     </h1>
-    <h1>
-        Quaerat?
-    </h1>
-
-    <!-- p*3>lorem1 -->
-    <p>
-        Lorem.
-    </p>
-    <p>
-        Optio.
-    </p>
-    <p>
-        Reiciendis.
-    </p>
     <script>
-        console.log($("h1").html());
-        
-        $("h1").click(function () {
-            console.log($(this).html());
-        })
+        $("#head1").mouseenter(function () {
+            console.log("첫번째 제목 : 마우스 엔터");
+        });
+        $("#head1").mouseleave(function () {
+            console.log("첫번째 제목 : 마우스 떠남");
+        });
 
-        let paras = document.querySelectorAll("p");
+        $("#head2").hover(function () {
+            console.log("두번째 제목 : 마우스 엔터!!!");
+        }, function () {
+            console.log("두번째 제목 : 마우스 떠남@@@");
+        } );// hover는 mouseenter와 mouseleave 2개의 기능을 동시에 구현하기 때문에 넣어야 될 parameter함수도 2개임.
 
-        for (let para of paras) {
-            para.onclick = function () {
-                console.log(this.innerHTML);
-            }
-        }
+
+
     </script>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
-
