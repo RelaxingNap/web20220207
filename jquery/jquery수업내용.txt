@@ -1,42 +1,48 @@
-1. js파일로 함수만 빼서 파일을 만든 후 script element에서 src에 js파일의 경로와 파일명을 적으면 따로 정의 안하고 사용 가능.
-   함수를 사용하기 이전에 작성 할 것.
-   특별한 이유 없으면 head element안에 넣어서 사용하면 좋음.
-5. 여태까지 document에서 불러와서 작성했던 방법을 바닐라 js라고 한다.
-   jquery에서는 바닐라 js에서 사용되는 긴 코드들을 간단하게 축약시켜서 사용 가능.
-   jquery는 누군가가 잘 만든 javascript. 브라우저가 조금씩 다르게 동작해서 생기는 문제를 해결시켜줌.
-6. jquery의 $ 함수는 바닐라js에서의 querySelector와 같은 기능을 함.
-   $ 함수에서 매개변수로 값을 얻어와서 method를 사용하여 조작함.
-7. hide() - 숨기는 method. 
-   일단 각 element를 다 읽은 후 script element를 실행하여 element를 조작함.
-8. , 는 group selector
-   show() - 숨긴 요소를 보이게 하는 method.
-9. 방문자들이 웹페이지에서 취한 행동에 따라 이벤트를 불러옴.
-   이벤트는 어떤 사건에 대한 예측된 행동을 보여준다.
-   click() - 마우스 클릭시 일어날 행동을 정의하는 event.
-   넘겨받는 파라미터가 javascript code이므로 ()안에 함수 작성.
-11.this는 함수가 실행 될 때 함수가 소속된 객체   
-12.keyup() - 키보드에서 손을 뗄 시 일어날 행동을 정의하는 event.
-13.dblclick() - 마우스 더블클릭할 시 일어날 행동을 정의하는 event.
-   mouseenter() - 마우스가 일정범위내에 들어올 시 일어날 행동을 정의하는 event.
-   mouseleave() - 마우스가 일정범위내에 있다가 범위 밖으로 나갈 시 일어날 행동을 정의하는 event.
-   mousedown() - 마우스가 눌려있을때 일어날 행동을 정의하는 event.
-   mouseup() - 마우스를 눌렀다가 뗐을시 일어날 행동을 정의하는 event.
-   mousemove() - 일정영역안에서 마우스커서가 움직일때마다 일어날 행동을 정의하는 event.
-14.keypress() - 
-   keydown() - 
-15.hover() -  mouseleave와 mouseenter 2개의 행동이 일어났을 시 정의하는 event.
-   따라서, hover의 ()안에는 2개의 함수가 들어감.
-16.focus() - input element의 활성화 시 발생.
-   blur() - input element의 비활성화 시 발생.
-17.jquery에 모든 html event attribute에 대한 내용이 구현되어있지 않기 때문에 on method를 사용하여 표현되지 않은 html event를 발생 시킬 수 있다.
-   event parameter에 띄어쓰기를 통해 여러개의 event를 넣을 수 있음.
-   객체에 event와 행동을 담아서 작성도 가능. 이때, parameter는 객체 1개만 필요.
-18.script element는 h1 element보다 위에 있어서 실행이 안됨.
-   그래서 dom이 완료되었을 때, 실행하도록 ready()를 사용.
-   ready()를 사용하면 script element를 문서코드 이전에 작성 가능.
-19.body element쪽에서 dom이 완성되지 않아 어떤element가 생성될지 모르기 때문에 (document).ready 를 생략해도 ready method는 실행됨.
-20.hide()에서 ()안에 숫자나 특정한 string 값을 넣을 수 있다. 숫자를 넣을 시 숫자의 단위는 ms(밀리세컨드)이다.
-22.toggle() - hide()와 show()가 번갈아가면서 적용되는 method.  
-24.toggle()의 ()안에도 hide()처럼 숫자나 특정한 문자 삽입 가능.
-25.
+1.  js파일로 함수만 빼서 파일을 만든 후 script element에서 src에 js파일의 경로와 파일명을 적으면 따로 정의 안하고 사용 가능.
+    함수를 사용하기 이전에 작성 할 것.
+    특별한 이유 없으면 head element안에 넣어서 사용하면 좋음.
+5.  여태까지 document에서 불러와서 작성했던 방법을 바닐라 js라고 한다.
+    jquery에서는 바닐라 js에서 사용되는 긴 코드들을 간단하게 축약시켜서 사용 가능.
+    jquery는 누군가가 잘 만든 javascript. 브라우저가 조금씩 다르게 동작해서 생기는 문제를 해결시켜줌.
+6.  jquery의 $ 함수는 바닐라js에서의 querySelector와 같은 기능을 함.
+    $ 함수에서 매개변수로 값을 얻어와서 method를 사용하여 조작함.
+7.  hide() - 숨기는 method. 
+    일단 각 element를 다 읽은 후 script element를 실행하여 element를 조작함.
+8.  , 는 group selector
+    show() - 숨긴 요소를 보이게 하는 method.
+9.  방문자들이 웹페이지에서 취한 행동에 따라 이벤트를 불러옴.
+    이벤트는 어떤 사건에 대한 예측된 행동을 보여준다.
+    click() - 마우스 클릭시 일어날 행동을 정의하는 event.
+    넘겨받는 파라미터가 javascript code이므로 ()안에 함수 작성.
+11. this는 함수가 실행 될 때 함수가 소속된 객체   
+12. keyup() - 키보드에서 손을 뗄 시 일어날 행동을 정의하는 event.
+13. dblclick() - 마우스 더블클릭할 시 일어날 행동을 정의하는 event.
+    mouseenter() - 마우스가 일정범위내에 들어올 시 일어날 행동을 정의하는 event.
+    mouseleave() - 마우스가 일정범위내에 있다가 범위 밖으로 나갈 시 일어날 행동을 정의하는 event.
+    mousedown() - 마우스가 눌려있을때 일어날 행동을 정의하는 event.
+    mouseup() - 마우스를 눌렀다가 뗐을시 일어날 행동을 정의하는 event.
+    mousemove() - 일정영역안에서 마우스커서가 움직일때마다 일어날 행동을 정의하는 event.
+14. keypress() - 
+    keydown() - 
+15. hover() -  mouseleave와 mouseenter 2개의 행동이 일어났을 시 정의하는 event.
+    따라서, hover의 ()안에는 2개의 함수가 들어감.
+16. focus() - input element의 활성화 시 발생.
+    blur() - input element의 비활성화 시 발생.
+17. jquery에 모든 html event attribute에 대한 내용이 구현되어있지 않기 때문에 on method를 사용하여 표현되지 않은 html event를 발생 시킬 수 있다.
+    event parameter에 띄어쓰기를 통해 여러개의 event를 넣을 수 있음.
+    객체에 event와 행동을 담아서 작성도 가능. 이때, parameter는 객체 1개만 필요.
+18. script element는 h1 element보다 위에 있어서 실행이 안됨.
+    그래서 dom이 완료되었을 때, 실행하도록 ready()를 사용.
+    ready()를 사용하면 script element를 문서코드 이전에 작성 가능.
+19. body element쪽에서 dom이 완성되지 않아 어떤element가 생성될지 모르기 때문에 (document).ready 를 생략해도 ready method는 실행됨.
+20. hide()에서 ()안에 숫자나 특정한 string 값을 넣을 수 있다. 숫자를 넣을 시 숫자의 단위는 ms(밀리세컨드)이다.
+22. toggle() - hide()와 show()가 번갈아가면서 적용되는 method.  
+24. toggle()의 ()안에도 hide()처럼 숫자나 특정한 문자 삽입 가능.
+25. fadeIn() - 보여지고 있는 element안의 content를 사라지게 하는 method
+    fadeOut() -안보이는 element안의 content를 나타나게 하는 method
+    fadeToggle() - fadeIn과 fadeOut이 번갈아가면서 실행되는 method
+26. slideDown() - 안보이는 element안의 content를 silde형식으로 나타나게 하는 method.
+    slideUp() - 보여지고 있는 element안의 content를 silde형식으로 사라지게 하는 method.
+    slideToggle() - slideUp과 slideDown이 번갈아가면서 실행되는 method
+27. 
    검색할 때, 카페나 블로그 보다는 되도록이면 공식문서로 볼 것.
